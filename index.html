@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+
+    <link rel="stylesheet" href="/style/style.css">
+</head>
+
+<body>
+
+    <!-- Navbar STARTS -->
+    <nav>
+        <ul>
+            <li class="brand_info">
+
+                <div class="brand">
+                    <!-- logo of brand  -->
+                </div>
+                <div class="brand_heading">Spotify Player</div>
+            </li>
+            <li class="nav_links">
+                <div>Home</div>
+                <div>About</div>
+            </li>
+        </ul>
+    </nav>
+    <!-- Navbar ENDS -->
+
+
+
+    <div class="container">
+
+        <div class="middleArea">
+            <div id="currentSongThumbnail">
+                <!-- image will be added here by DOM -->
+
+            </div>
+            <div id="songList">
+                <!-- songs will be inserted here by DOM -->
+            </div>
+
+        </div>
+
+
+        <div class="controller">
+
+            <div class="progressBar_container">
+                <div id="currentTime">00:00/00:00</div>
+                <input type="range" name="song_controller" id="progressBar" min="0" max="100" value="0">
+            </div>
+            <div class="other_stuff">
+                <!-- controll buttons and song info stuff  -->
+                <class class="prev_button"></class>
+                <class class="play_pause_button play" id="master_btn"></class>
+                <class class="next_button"></class>
+                <div id="songName">Song Title</div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="/scripts/script.js"></script>
+</body>
+
+</html>
